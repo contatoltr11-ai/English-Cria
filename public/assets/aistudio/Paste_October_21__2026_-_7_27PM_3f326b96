@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head><script>if(location.pathname==="/sqzctzha4eepilikiryp5gnuiu")location.replace("/sqzctzha4eepilikiryp5gnuiu/"+location.search+location.hash)</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Toolkit | Get Their Attention. Keep Them Learning.</title>
+  <meta name="description" content="Get their attention and keep them learning. Six printable preschool kits for attention, activities, routines, screen-free learning and inclusive support. One payment.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Teacher Toolkit | Get Their Attention. Keep Them Learning.">
+  <meta property="og:description" content="Six ready-to-print activity kits to help you manage transitions, keep little hands busy and make learning easier.">
+  <meta property="og:image" content="https://preschool-playprint-bundle.lovable.app/images/hero/teacher-toolkit-tabletop.webp">
+  <meta property="og:type" content="website">
+
+  <!-- Allowed Fonts & Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basecoat-css@1.0.2/dist/basecoat.cdn.min.css">
+  <link rel="stylesheet" href="shell.css">
+  <script src="shell.js" defer></script>
+
+  <style>
+    :root {
+      --accent: #d81b60;
+      --accent-hover: #b7154f;
+      --accent-contrast: #ffffff;
+      --pink-soft: #fdf2f7;
+      --pink-border: #fbcfe8;
+      --bg-alt: #f8fafc;
+      --text-main: #1e293b;
+      --text-sub: #475569;
+      --card-border: #e2e8f0;
+      --card-shadow: 0 4px 14px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+      --card-hover-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      color: var(--text-main);
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.55;
+      padding-bottom: 74px; /* offset for sticky bottom bar */
+      overflow-x: hidden;
+    }
+
+    /* Common utility & buttons */
+    .btn-pink {
+      background-color: var(--accent);
+      color: var(--accent-contrast) !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      border-radius: 9999px;
+      padding: 0.875rem 1.75rem;
+      font-size: 1.05rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(216, 27, 96, 0.35);
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-pink:hover {
+      background-color: var(--accent-hover);
+      box-shadow: 0 6px 20px rgba(216, 27, 96, 0.45);
+      transform: translateY(-1px);
+    }
+    .btn-pink:active {
+      transform: translateY(0);
+    }
+    .badge-pill {
+      background-color: var(--pink-soft);
+      color: #9d174d;
+      border: 1px solid var(--pink-border);
+      border-radius: 9999px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* Section padding */
+    .landing-section {
+      padding: 4rem 1.25rem;
+    }
+    .landing-section.alt-bg {
+      background-color: var(--bg-alt);
+    }
+    .section-wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2.5rem;
+    }
+    .section-eyebrow {
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #be185d;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #0f172a;
+      margin-bottom: 0.75rem;
+    }
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-sub);
+      margin: 0;
+    }
+
+    /* 1. HERO SECTION */
+    .hero-section {
+      padding: 3.5rem 1.25rem 4rem;
+      text-align: center;
+      background: linear-gradient(180deg, #fff0f6 0%, #ffffff 100%);
+    }
+    .hero-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      line-height: 1.18;
+      color: #0f172a;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: #334155;
+      max-width: 720px;
+      margin: 0 auto 1.75rem;
+      line-height: 1.6;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+    .hero-price-tag {
+      margin-bottom: 1.25rem;
+    }
+    .hero-price-amount {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #be185d;
+    }
+    .hero-price-sub {
+      font-size: 0.95rem;
+      color: #64748b;
+      margin-left: 0.35rem;
+      font-weight: 600;
+    }
+    .hero-cta {
+      margin-bottom: 0.75rem;
+    }
+    .hero-trust {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin: 0 0 2.5rem;
+    }
+    .hero-media {
+      margin: 0 auto;
+      max-width: 820px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: #fff;
+    }
+    .hero-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .hero-media-caption {
+      font-size: 0.85rem;
+      color: #64748b;
+      padding: 0.75rem 1rem;
+      background: #ffffff;
+      border-top: 1px solid #f1f5f9;
+      font-style: italic;
+    }
+
+    /* 2. BENEFITS SECTION */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .benefit-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      border: 1px solid var(--card-border);
+      box-shadow: var(--card-shadow);
+      text-align: left;
+    }
+    .benefit-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--pink-soft);
+      color: #be185d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.5rem;
+    }
+    .benefit-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+    .benefit-text {
+      color: var(--text-sub);
+      font-size: 0.975rem;
+      margin: 0;
+    }
+
+    /* 3. WHAT'S INCLUDED */
+    .kits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .kit-card {
+      background: #ffffff;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .kit-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--card-hover-shadow);
+    }
+    .kit-img-box {
+      width: 100%;
+      height: 240px;
+      background: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .kit-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.3s ease;
+    }
+    .kit-card:hover .kit-img-box img {
+      transform: scale(1.02);
+    }
+    .kit-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .kit-tag-row {
+      margin-bottom: 0.5rem;
+    }
+    .kit-pages-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #9d174d;
+      background: #fce7f3;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .kit-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0.4rem 0 0.65rem;
+      line-height: 1.3;
+    }
+    .kit-desc {
+      font-size: 0.95rem;
+      color: var(--text-sub);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .kits-note {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 1.75rem;
+      padding: 0.85rem 1.25rem;
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px dashed #cbd5e1;
+    }
+
+    /* 4. GALLERY MARQUEE */
+    .gallery-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1.25rem 0 2rem;
+    }
+    .gallery-conveyor {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin: 1rem 0 2rem;
+      overflow: hidden;
+    }
+    .marquee-row {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+    }
+    .marquee-track {
+      display: flex;
+      flex-wrap: nowrap;
+      width: max-content;
+      will-change: transform;
+    }
+    .marquee-group {
+      display: flex;
+      flex-shrink: 0;
+      gap: 1.25rem;
+      padding-right: 1.25rem;
+    }
+    .marquee-track-ltr {
+      animation: marquee-ltr 40s linear infinite;
+    }
+    .marquee-track-rtl {
+      animation: marquee-rtl 55s linear infinite;
+    }
+    @keyframes marquee-ltr {
+      0% {
+        transform: translate3d(-50%, 0, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    @keyframes marquee-rtl {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    .gallery-item {
+      width: 275px;
+      flex: 0 0 275px;
+      background: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      outline: none;
+      padding: 0;
+      font-family: inherit;
+    }
+    .gallery-item:hover, .gallery-item:focus-visible {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+      border-color: #cbd5e1;
+    }
+    .gallery-thumb-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 130%; /* portrait aspect ratio */
+      background: #f8fafc;
+      overflow: hidden;
+    }
+    .gallery-thumb-wrap img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.3s ease;
+      pointer-events: none;
+    }
+    .gallery-item:hover .gallery-thumb-wrap img {
+      transform: scale(1.03);
+    }
+    .gallery-zoom-badge {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(15, 23, 42, 0.82);
+      color: #ffffff;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      pointer-events: none;
+    }
+    .gallery-caption {
+      padding: 0.65rem 0.85rem;
+      font-size: 0.8125rem;
+      border-top: 1px solid #f1f5f9;
+      background: #ffffff;
+    }
+    .gallery-page-title {
+      font-weight: 700;
+      color: #0f172a;
+      display: block;
+      line-height: 1.25;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .gallery-kit-name {
+      font-size: 0.72rem;
+      color: #64748b;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .gallery-footer-note {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #64748b;
+      margin: 1.5rem auto 1.75rem;
+      max-width: 650px;
+    }
+    .gallery-cta-block {
+      text-align: center;
+    }
+    .gallery-guarantee-line {
+      font-size: 0.825rem;
+      color: #64748b;
+      margin-top: 0.65rem;
+    }
+    @media (max-width: 640px) {
+      .gallery-item {
+        width: 200px;
+        flex: 0 0 200px;
+      }
+      .marquee-group {
+        gap: 0.875rem;
+        padding-right: 0.875rem;
+      }
+      .gallery-conveyor {
+        gap: 0.875rem;
+      }
+      .marquee-track-ltr {
+        animation-duration: 26s;
+      }
+      .marquee-track-rtl {
+        animation-duration: 36s;
+      }
+    }
+
+    /* 5. PRICE BLOCK */
+    .price-box {
+      max-width: 620px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 2px solid var(--pink-border);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 12px 30px rgba(216, 27, 96, 0.08);
+      text-align: center;
+    }
+    .price-box-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+    .price-big-row {
+      margin: 1.25rem 0 1.5rem;
+    }
+    .price-big-number {
+      font-size: 3.25rem;
+      font-weight: 800;
+      color: #be185d;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .price-big-sub {
+      font-size: 0.95rem;
+      color: #475569;
+      margin-top: 0.4rem;
+      font-weight: 600;
+    }
+    .price-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 1.75rem 0;
+      text-align: left;
+      display: inline-block;
+    }
+    .price-bullets li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+      color: #334155;
+      font-weight: 500;
+    }
+    .price-bullets li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #059669;
+      font-weight: 900;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+    .price-box .btn-pink {
+      width: 100%;
+      font-size: 1.125rem;
+      padding: 1rem;
+    }
+    .price-box-trust {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #059669;
+      margin-top: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+    }
+    .price-guarantee-text {
+      font-size: 0.825rem;
+      color: #64748b;
+      margin-top: 0.75rem;
+      line-height: 1.4;
+    }
+
+    /* 6. FAQ ACCORDION */
+    .faq-container {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+    }
+    details.faq-item {
+      background: #ffffff;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      transition: border-color 0.2s ease;
+    }
+    details.faq-item[open] {
+      border-color: #cbd5e1;
+    }
+    summary.faq-summary {
+      padding: 1.15rem 1.25rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f172a;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+    summary.faq-summary::-webkit-details-marker {
+      display: none;
+    }
+    summary.faq-summary::after {
+      content: "+";
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #be185d;
+      margin-left: 0.75rem;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+    details[open] summary.faq-summary::after {
+      content: "−";
+      transform: rotate(180deg);
+    }
+    .faq-content {
+      padding: 0 1.25rem 1.25rem;
+      color: var(--text-sub);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 0.85rem;
+    }
+
+    /* 7. FINAL CTA */
+    .final-cta-section {
+      background: linear-gradient(180deg, #fff5f8 0%, #ffffff 100%);
+      text-align: center;
+      padding: 4rem 1.25rem;
+      border-top: 1px solid #fce7f3;
+    }
+    .final-cta-sub {
+      font-size: 1.15rem;
+      color: #334155;
+      margin-bottom: 1.75rem;
+    }
+    .final-trust-line {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-top: 0.85rem;
+    }
+
+    /* 8. STICKY BOTTOM BAR */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-top: 1px solid #e2e8f0;
+      padding: 0.65rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.08);
+      z-index: 100;
+      max-width: 100vw;
+    }
+    .sticky-bar-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .sticky-bar-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+    .sticky-bar-price {
+      font-size: 0.8125rem;
+      color: #be185d;
+      font-weight: 800;
+    }
+    .sticky-bar .btn-pink {
+      padding: 0.6rem 1.25rem;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    /* 9. FOOTER */
+    .landing-footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 2.5rem 1.25rem;
+      font-size: 0.825rem;
+      line-height: 1.6;
+    }
+    .landing-footer p {
+      margin: 0.35rem 0;
+    }
+    .landing-footer-policy {
+      color: #64748b;
+      font-size: 0.775rem;
+    }
+
+    /* LIGHTBOX MODAL */
+    .lightbox-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(15, 23, 42, 0.9);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      backdrop-filter: blur(5px);
+    }
+    .lightbox-backdrop.active {
+      display: flex;
+    }
+    .lightbox-container {
+      position: relative;
+      max-width: 900px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 8px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      object-fit: contain;
+      background: #ffffff;
+    }
+    .lightbox-caption {
+      color: #ffffff;
+      margin-top: 0.85rem;
+      font-size: 0.95rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .lightbox-close-btn {
+      position: absolute;
+      top: -44px;
+      right: 0;
+      background: #ffffff;
+      color: #0f172a;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .lightbox-close-btn:focus-visible {
+      outline: 2px solid #be185d;
+    }
+
+    /* Responsive adjustments */
+    @media (min-width: 640px) {
+      .hero-h1 {
+        font-size: 2.85rem;
+      }
+      .section-title {
+        font-size: 2.35rem;
+      }
+      .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .kits-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sticky-bar {
+        max-width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 14px 14px 0 0;
+        border-left: 1px solid #e2e8f0;
+        border-right: 1px solid #e2e8f0;
+        padding: 0.75rem 1.5rem;
+      }
+      .sticky-bar-title {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .kits-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+    }
+
+    @media print {
+      .sticky-bar, .lightbox-backdrop, .btn-pink {
+        display: none !important;
+      }
+      body {
+        padding-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HERO SECTION -->
+  <header class="hero-section">
+    <div class="hero-wrap">
+      <div class="hero-badges">
+        <span class="badge-pill">★ 560+ printable pages</span>
+        <span class="badge-pill">✓ 6 complete PDF kits</span>
+        <span class="badge-pill">⚡ Instant digital access</span>
+      </div>
+
+      <h1 class="hero-h1">Stop Planning Preschool Activities From Scratch!</h1>
+
+      <p class="hero-sub">
+        Six ready-to-print activity kits to help you manage classroom transitions, keep little hands busy and make learning easier — without hours of preparation.
+      </p>
+
+      <div class="hero-price-tag">
+        <span class="hero-price-amount">$9.90 USD</span>
+        <span class="hero-price-sub">· ONE-TIME · No subscription</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+          DOWNLOAD ALL 6 KITS — $9.90
+        </a>
+      </div>
+
+      <p class="hero-trust">
+        Digital PDF files · Print at home or school · No physical products shipped
+      </p>
+
+      <div class="hero-media">
+        <img src="https://preschool-playprint-bundle.lovable.app/images/hero/teacher-toolkit-tabletop.webp" alt="Complete Preschool Teacher Toolkit printed booklets spread on classroom table" width="1200" height="750" loading="eager">
+        <div class="hero-media-caption">
+          Five featured booklets shown. The Routine & Behavior Pack is also included.
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. BENEFITS SECTION -->
+  <section class="landing-section alt-bg">
+    <div class="section-wrap">
+      <div class="section-header">
+        <div class="section-eyebrow">Made for real classroom moments</div>
+        <h2 class="section-title">Spend less time preparing. More time teaching.</h2>
+        <p class="section-desc">Designed by educators to turn chaos into calm, meaningful early childhood moments.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🎯</div>
+          <h3 class="benefit-title">Get their attention</h3>
+          <p class="benefit-text">Fun listening prompts and quick transitions for busy preschool classrooms that redirect wandering minds without raising your voice.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⏱️</div>
+          <h3 class="benefit-title">Fill the gaps</h3>
+          <p class="benefit-text">Have purposeful, low-prep activities ready when your lesson ends early or unexpected schedule delays pop up.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🧩</div>
+          <h3 class="benefit-title">Support different learners</h3>
+          <p class="benefit-text">Visual routines, choices and printable practice for ages 2–7 to ensure every child feels included, calm, and ready to learn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WHAT'S INCLUDED -->
+  <section class="landing-section">
+    <div class="section-wrap">
+      <div class="section-header">
+        <div class="section-eyebrow">Everything inside the bundle</div>
+        <h2 class="section-title">Everything you get for $9.90</h2>
+        <p class="section-desc">All six kits are included in one purchase. Choose the pages you need, download and print.</p>
+      </div>
+
+      <div class="kits-grid">
+        <!-- Kit 1 -->
+        <div class="kit-card">
+          <div class="kit-img-box">
+            <img src="https://preschool-playprint-bundle.lovable.app/images/mockups/01_attention_rescue.svg" alt="Classroom Attention Rescue Kit cover mockup" loading="lazy">
+          </div>
+          <div class="kit-body">
+            <div class="kit-tag-row">
+              <span class="kit-pages-badge">50 Pages</span>
+            </div>
+            <h3 class="kit-title">Classroom Attention Rescue Kit</h3>
+            <p class="kit-desc">Attention-getters, listening games, call-and-response and playful prompts for clean-up, line-up and transitions.</p>
+          </div>
+        </div>
+
+        <!-- Kit 2 -->
+        <div class="kit-card">
+          <div class="kit-img-box">
+            <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/00-capa-classroom-rescue-kit-full.webp" alt="Classroom Rescue Kit cover" loading="lazy">
+          </div>
+          <div class="kit-body">
+            <div class="kit-tag-row">
+              <span class="kit-pages-badge">72 Pages</span>
+            </div>
+            <h3 class="kit-title">Classroom Rescue Kit</h3>
+            <p class="kit-desc">Purposeful, low-prep activities for movement, group time, coordination and those unexpected gaps in the school day.</p>
+          </div>
+        </div>
+
+        <!-- Kit 3 -->
+        <div class="kit-card">
+          <div class="kit-img-box">
+            <img src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-cover-full.webp" alt="Preschool Routine and Behavior Pack cover" loading="lazy">
+          </div>
+          <div class="kit-body">
+            <div class="kit-tag-row">
+              <span class="kit-pages-badge">50 Pages</span>
+            </div>
+            <h3 class="kit-title">Preschool Routine & Behavior Pack</h3>
+            <p class="kit-desc">Visual schedules, simple classroom expectations and routine supports to help children anticipate what comes next.</p>
+          </div>
+        </div>
+
+        <!-- Kit 4 -->
+        <div class="kit-card">
+          <div class="kit-img-box">
+            <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/00-capa-preschool-mega-activity-bundle-full.webp" alt="Preschool Mega Activity Bundle cover" loading="lazy">
+          </div>
+          <div class="kit-body">
+            <div class="kit-tag-row">
+              <span class="kit-pages-badge">170+ Pages</span>
+            </div>
+            <h3 class="kit-title">Preschool Mega Activity Bundle</h3>
+            <p class="kit-desc">Printable learning for letters, early sounds, numbers, shapes, matching, tracing and fine motor development.</p>
+          </div>
+        </div>
+
+        <!-- Kit 5 -->
+        <div class="kit-card">
+          <div class="kit-img-box">
+            <img src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/00-capa-screen-free-back-to-school-full.webp" alt="Screen-Free Back-to-School Mega Kit cover" loading="lazy">
+          </div>
+          <div class="kit-body">
+            <div class="kit-tag-row">
+              <span class="kit-pages-badge">100 Pages</span>
+            </div>
+            <h3 class="kit-title">Screen-Free Back-to-School Mega Kit</h3>
+            <p class="kit-desc">Hands-on printables for tracing, matching, early literacy, school themes and everyday learning through play.</p>
+          </div>
+        </div>
+
+        <!-- Kit 6 -->
+        <div class="kit-card">
+          <div class="kit-img-box">
+            <img src="https://preschool-playprint-bundle.lovable.app/images/mockups/02_independence_kit.svg" alt="My Everyday Independence Kit cover mockup" loading="lazy">
+          </div>
+          <div class="kit-body">
+            <div class="kit-tag-row">
+              <span class="kit-pages-badge">120 Pages</span>
+            </div>
+            <h3 class="kit-title">My Everyday Independence Kit</h3>
+            <p class="kit-desc">Adaptable visual choices and supports for needs, feelings, self-care and everyday independence, including children who benefit from extra communication support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="kits-note">
+        <strong>PDF downloads only.</strong> The hero photo features five kits; the Routine & Behavior Pack is included as the sixth.
+      </div>
+
+      <div style="text-align: center;">
+        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+          GET THE COMPLETE TOOLKIT — $9.90
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. GALLERY -->
+  <section class="landing-section alt-bg">
+    <div class="section-wrap">
+      <div class="section-header">
+        <div class="section-eyebrow">Real pages from the printable kits</div>
+        <h2 class="section-title">Look inside before you buy.</h2>
+        <p class="section-desc">Real, ready-to-print activities — not just pretty covers. See the exact kinds of pages you can use in your classroom.</p>
+        
+        <div class="gallery-badges">
+          <span class="badge-pill">🔍 21 real sample pages</span>
+          <span class="badge-pill">🖨️ Print what you need</span>
+          <span class="badge-pill">👆 Tap to enlarge</span>
+        </div>
+      </div>
+
+      <!-- TWO CONTINUOUS INFINITE MARQUEE ROWS (Conveyor Belt) -->
+      <div class="gallery-conveyor" id="galleryConveyor" aria-label="Interactive sample pages conveyor">
+
+        <!-- ROW 1 (TOP): scrolls continuously from LEFT to RIGHT (~40s loop) -->
+        <div class="marquee-row" role="region" aria-label="Sample pages row 1 (left to right)">
+          <div class="marquee-track marquee-track-ltr">
+            <!-- First Set (Items 1 to 9) -->
+            <div class="marquee-group">
+              <!-- Item 1 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-10-thumb.webp" data-caption="Ready, Set, Eyes! · p.10 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-10-thumb.webp" alt="Ready, Set, Eyes! sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Ready, Set, Eyes! · p.10</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 2 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/01-pagina-08-find-the-blue-objects-thumb.webp" data-caption="Find the Blue Objects (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/01-pagina-08-find-the-blue-objects-thumb.webp" alt="Find the Blue Objects sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Find the Blue Objects</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 3 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/07-pagina-23-number-delivery-thumb.webp" data-caption="Number Delivery (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/07-pagina-23-number-delivery-thumb.webp" alt="Number Delivery sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Number Delivery</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 4 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/02-pagina-15-match-the-shadows-thumb.webp" data-caption="Match the Shadows (Screen-Free Mega Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/02-pagina-15-match-the-shadows-thumb.webp" alt="Match the Shadows sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Match the Shadows</span>
+                  <span class="gallery-kit-name">Screen-Free Mega Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 5 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-visual-cards-thumb.webp" data-caption="Visual Cards (Preschool Routine & Behavior)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-visual-cards-thumb.webp" alt="Visual Cards sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Visual Cards</span>
+                  <span class="gallery-kit-name">Routine & Behavior</span>
+                </div>
+              </button>
+
+              <!-- Item 6 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-47-thumb.webp" data-caption="Print & Prep Guide · p.47 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-47-thumb.webp" alt="Print & Prep Guide sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Print & Prep Guide · p.47</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 7 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/03-pagina-119-logic-review-thumb.webp" data-caption="Logic Review (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/03-pagina-119-logic-review-thumb.webp" alt="Logic Review sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Logic Review</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 8 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/01-pagina-44-build-a-puppet-pieces-thumb.webp" data-caption="Build a Puppet (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/01-pagina-44-build-a-puppet-pieces-thumb.webp" alt="Build a Puppet sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Build a Puppet</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 9 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/01-pagina-14-trace-the-lines-thumb.webp" data-caption="Trace the Lines (Screen-Free Mega Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/01-pagina-14-trace-the-lines-thumb.webp" alt="Trace the Lines sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Trace the Lines</span>
+                  <span class="gallery-kit-name">Screen-Free Mega Kit</span>
+                </div>
+              </button>
+            </div>
+
+            <!-- Duplicated Set (Items 1 to 9 duplicated for seamless infinite loop) -->
+            <div class="marquee-group" aria-hidden="true">
+              <!-- Item 1 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-10-thumb.webp" data-caption="Ready, Set, Eyes! · p.10 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-10-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Ready, Set, Eyes! · p.10</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 2 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/01-pagina-08-find-the-blue-objects-thumb.webp" data-caption="Find the Blue Objects (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/01-pagina-08-find-the-blue-objects-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Find the Blue Objects</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 3 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/07-pagina-23-number-delivery-thumb.webp" data-caption="Number Delivery (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/07-pagina-23-number-delivery-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Number Delivery</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 4 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/02-pagina-15-match-the-shadows-thumb.webp" data-caption="Match the Shadows (Screen-Free Mega Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/02-pagina-15-match-the-shadows-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Match the Shadows</span>
+                  <span class="gallery-kit-name">Screen-Free Mega Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 5 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-visual-cards-thumb.webp" data-caption="Visual Cards (Preschool Routine & Behavior)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-visual-cards-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Visual Cards</span>
+                  <span class="gallery-kit-name">Routine & Behavior</span>
+                </div>
+              </button>
+
+              <!-- Item 6 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-47-thumb.webp" data-caption="Print & Prep Guide · p.47 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-47-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Print & Prep Guide · p.47</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 7 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/03-pagina-119-logic-review-thumb.webp" data-caption="Logic Review (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/03-pagina-119-logic-review-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Logic Review</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 8 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/01-pagina-44-build-a-puppet-pieces-thumb.webp" data-caption="Build a Puppet (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/01-pagina-44-build-a-puppet-pieces-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Build a Puppet</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 9 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/01-pagina-14-trace-the-lines-thumb.webp" data-caption="Trace the Lines (Screen-Free Mega Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/01-pagina-14-trace-the-lines-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Trace the Lines</span>
+                  <span class="gallery-kit-name">Screen-Free Mega Kit</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2 (BOTTOM): scrolls continuously from RIGHT to LEFT (~55s loop) -->
+        <div class="marquee-row" role="region" aria-label="Sample pages row 2 (right to left)">
+          <div class="marquee-track marquee-track-rtl">
+            <!-- First Set (Items 10 to 18) -->
+            <div class="marquee-group">
+              <!-- Item 10 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-school-day-thumb.webp" data-caption="School Day (Preschool Routine & Behavior)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-school-day-thumb.webp" alt="School Day sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">School Day</span>
+                  <span class="gallery-kit-name">Routine & Behavior</span>
+                </div>
+              </button>
+
+              <!-- Item 11 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-46-thumb.webp" data-caption="Age Adaptation Guide · p.46 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-46-thumb.webp" alt="Age Adaptation Guide sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Age Adaptation · p.46</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 12 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/06-pagina-60-shape-review-thumb.webp" data-caption="Shape Review (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/06-pagina-60-shape-review-thumb.webp" alt="Shape Review sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Shape Review</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 13 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/06-pagina-20-describe-and-build-thumb.webp" data-caption="Describe and Build (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/06-pagina-20-describe-and-build-thumb.webp" alt="Describe and Build sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Describe and Build</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 14 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/06-pagina-38-emotions-at-school-thumb.webp" data-caption="Emotions at School (Screen-Free Mega Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/06-pagina-38-emotions-at-school-thumb.webp" alt="Emotions at School sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Emotions at School</span>
+                  <span class="gallery-kit-name">Screen-Free Mega Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 15 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-morning-thumb.webp" data-caption="Morning Routine (Preschool Routine & Behavior)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-morning-thumb.webp" alt="Morning Routine sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Morning Routine</span>
+                  <span class="gallery-kit-name">Routine & Behavior</span>
+                </div>
+              </button>
+
+              <!-- Item 16 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-23-thumb.webp" data-caption="Quiet Cactus & Sleepy Sloth · p.23 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-23-thumb.webp" alt="Quiet Cactus & Sleepy Sloth sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Quiet Cactus · p.23</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 17 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/02-pagina-24-beginning-sounds-thumb.webp" data-caption="Beginning Sounds (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/02-pagina-24-beginning-sounds-thumb.webp" alt="Beginning Sounds sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Beginning Sounds</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 18 -->
+              <button type="button" class="gallery-item" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/08-pagina-32-object-sorting-cards-thumb.webp" data-caption="Object Sorting (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/08-pagina-32-object-sorting-cards-thumb.webp" alt="Object Sorting sample page" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Object Sorting</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+            </div>
+
+            <!-- Duplicated Set (Items 10 to 18 duplicated for seamless infinite loop) -->
+            <div class="marquee-group" aria-hidden="true">
+              <!-- Item 10 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-school-day-thumb.webp" data-caption="School Day (Preschool Routine & Behavior)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-school-day-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">School Day</span>
+                  <span class="gallery-kit-name">Routine & Behavior</span>
+                </div>
+              </button>
+
+              <!-- Item 11 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-46-thumb.webp" data-caption="Age Adaptation Guide · p.46 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-46-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Age Adaptation · p.46</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 12 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/06-pagina-60-shape-review-thumb.webp" data-caption="Shape Review (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/06-pagina-60-shape-review-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Shape Review</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 13 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/06-pagina-20-describe-and-build-thumb.webp" data-caption="Describe and Build (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/06-pagina-20-describe-and-build-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Describe and Build</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 14 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/06-pagina-38-emotions-at-school-thumb.webp" data-caption="Emotions at School (Screen-Free Mega Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/06-pagina-38-emotions-at-school-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Emotions at School</span>
+                  <span class="gallery-kit-name">Screen-Free Mega Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 15 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-morning-thumb.webp" data-caption="Morning Routine (Preschool Routine & Behavior)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-morning-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Morning Routine</span>
+                  <span class="gallery-kit-name">Routine & Behavior</span>
+                </div>
+              </button>
+
+              <!-- Item 16 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-23-thumb.webp" data-caption="Quiet Cactus & Sleepy Sloth · p.23 (Attention Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/attention/attention-page-23-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Quiet Cactus · p.23</span>
+                  <span class="gallery-kit-name">Attention Rescue Kit</span>
+                </div>
+              </button>
+
+              <!-- Item 17 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/02-pagina-24-beginning-sounds-thumb.webp" data-caption="Beginning Sounds (Mega Activity Bundle)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/02-pagina-24-beginning-sounds-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Beginning Sounds</span>
+                  <span class="gallery-kit-name">Mega Activity Bundle</span>
+                </div>
+              </button>
+
+              <!-- Item 18 duplicate -->
+              <button type="button" class="gallery-item" tabindex="-1" data-full="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/08-pagina-32-object-sorting-cards-thumb.webp" data-caption="Object Sorting (Classroom Rescue Kit)">
+                <div class="gallery-thumb-wrap">
+                  <img src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/08-pagina-32-object-sorting-cards-thumb.webp" alt="" loading="lazy">
+                  <span class="gallery-zoom-badge">🔍 Tap to see full page</span>
+                </div>
+                <div class="gallery-caption">
+                  <span class="gallery-page-title">Object Sorting</span>
+                  <span class="gallery-kit-name">Classroom Rescue Kit</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="gallery-footer-note">
+        These are real preview pages from five of the six included kits. The complete purchase includes six downloadable PDF kits; no printed books are shipped.
+      </p>
+
+      <div class="gallery-cta-block">
+        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+          GET ALL 6 KITS — ONLY $9.90
+        </a>
+        <div class="gallery-guarantee-line">
+          Instant digital access · One-time payment · 7-day guarantee
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PRICE BLOCK -->
+  <section class="landing-section">
+    <div class="section-wrap">
+      <div class="price-box">
+        <div class="section-eyebrow">Complete Teacher Bundle</div>
+        <h2 class="price-box-title">Six practical preschool kits. One small price.</h2>
+        
+        <div class="price-big-row">
+          <div class="price-big-number">$9.90</div>
+          <div class="price-big-sub">USD · Digital download · 560+ printable pages</div>
+        </div>
+
+        <ul class="price-bullets">
+          <li>All 6 printable PDF kits</li>
+          <li>Ready-to-use preschool activities</li>
+          <li>Print the pages you need</li>
+          <li>Instant access after payment approval</li>
+        </ul>
+
+        <div>
+          <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+            YES — GET ALL 6 KITS FOR $9.90
+          </a>
+        </div>
+
+        <div class="price-box-trust">
+          🔒 Secure Hotmart payment · 7-day refund guarantee
+        </div>
+
+        <p class="price-guarantee-text">
+          If the toolkit is not right for you, request a refund within 7 days according to Hotmart's policy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FAQ ACCORDION -->
+  <section class="landing-section alt-bg">
+    <div class="section-wrap">
+      <div class="section-header">
+        <div class="section-eyebrow">Got questions?</div>
+        <h2 class="section-title">Quick questions, clear answers.</h2>
+      </div>
+
+      <div class="faq-container">
+        <!-- Q1 (open by default) -->
+        <details class="faq-item" open>
+          <summary class="faq-summary">What exactly will I receive?</summary>
+          <div class="faq-content">
+            Six digital PDF kits with more than 560 printable pages in total, covering attention, classroom activities, routines, early learning, screen-free activities and independence. Optional products at checkout are separate and are not included in this offer.
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="faq-item">
+          <summary class="faq-summary">Are these printed books mailed to me?</summary>
+          <div class="faq-content">
+            No. These are DIGITAL PDF files, not physical books. After payment approval, download the files and print the pages you want at home or at school. Some activities need ordinary classroom materials.
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="faq-item">
+          <summary class="faq-summary">Is it a subscription? What currency will I pay in?</summary>
+          <div class="faq-content">
+            No subscription. The six-kit collection costs US$9.90 as a one-time payment. Hotmart will show any available local currency, applicable taxes and the final total before you pay.
+          </div>
+        </details>
+
+        <!-- Q4 -->
+        <details class="faq-item">
+          <summary class="faq-summary">Can I request a refund?</summary>
+          <div class="faq-content">
+            Yes. Purchases are protected by a 7-day guarantee according to Hotmart's refund policy.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FINAL CTA -->
+  <section class="final-cta-section">
+    <div class="section-wrap">
+      <div class="section-header" style="margin-bottom: 1.5rem;">
+        <h2 class="section-title">Make tomorrow's classroom a little easier.</h2>
+        <p class="final-cta-sub">Download the six-kit printable collection for US$9.90.</p>
+      </div>
+
+      <div>
+        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+          GET INSTANT PDF ACCESS — $9.90
+        </a>
+      </div>
+
+      <p class="final-trust-line">
+        One-time payment · 7-day guarantee · No physical books
+      </p>
+    </div>
+  </section>
+
+  <!-- 8. STICKY BOTTOM BAR -->
+  <aside class="sticky-bar" aria-label="Quick checkout action">
+    <div class="sticky-bar-info">
+      <span class="sticky-bar-title">Six PDF kits</span>
+      <span class="sticky-bar-price">$9.90 USD · One-time</span>
+    </div>
+    <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+      DOWNLOAD NOW
+    </a>
+  </aside>
+
+  <!-- 9. FOOTER -->
+  <footer class="landing-footer">
+    <div class="section-wrap">
+      <p>© 2026 Complete Preschool Teacher Toolkit. Digital PDF product. No physical items shipped.</p>
+      <p class="landing-footer-policy">If the toolkit is not right for you, request a refund within 7 days according to Hotmart's policy.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-backdrop" id="lightbox" role="dialog" aria-modal="true" aria-label="Page preview modal">
+    <div class="lightbox-container">
+      <button type="button" class="lightbox-close-btn" id="lightboxClose" aria-label="Close preview">×</button>
+      <img src="" alt="Preview page" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Lightbox logic
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      function openLightbox(src, caption) {
+        lightboxImg.src = src;
+        lightboxCaption.textContent = caption || '';
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        lightboxClose.focus();
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        lightboxImg.src = '';
+        lightboxCaption.textContent = '';
+        document.body.style.overflow = '';
+      }
+
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const fullSrc = item.getAttribute('data-full');
+          const caption = item.getAttribute('data-caption');
+          openLightbox(fullSrc, caption);
+        });
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+    });
+  </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"7004b19d732d43b298810595cc4050b1","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

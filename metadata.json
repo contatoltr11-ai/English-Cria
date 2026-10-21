@@ -1,0 +1,6 @@
+{
+  "name": "Teacher Toolkit - Preschool Activity App",
+  "description": "Six ready-to-print activity kits to help you manage transitions, keep little hands busy and make learning easier. Protected Web App.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

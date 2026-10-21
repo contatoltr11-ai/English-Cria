@@ -12,12 +12,33 @@ interface LightboxState {
   caption: string;
 }
 
-const CHECKOUT_URL = "https://pay.hotmart.com/A108135883A?off=8xjy0ssa";
+const BASE_CHECKOUT_URL = "https://pay.hotmart.com/A108135883A?off=8xjy0ssa";
+
+function buildCheckoutUrlWithUtms(): string {
+  if (typeof window === 'undefined') return BASE_CHECKOUT_URL;
+  try {
+    const search = window.location.search;
+    if (!search) return BASE_CHECKOUT_URL;
+    const currentParams = new URLSearchParams(search);
+    const targetUrl = new URL(BASE_CHECKOUT_URL);
+    currentParams.forEach((val, key) => {
+      targetUrl.searchParams.set(key, val);
+    });
+    return targetUrl.toString();
+  } catch {
+    return BASE_CHECKOUT_URL;
+  }
+}
 
 export default function App() {
   const [shieldConfig] = useState<ShieldOptions>(DEFAULT_SHIELD_CONFIG);
   const [lightbox, setLightbox] = useState<LightboxState | null>(null);
+  const [checkoutUrl, setCheckoutUrl] = useState<string>(BASE_CHECKOUT_URL);
   const shieldEngineRef = useRef<ShieldEngine | null>(null);
+
+  useEffect(() => {
+    setCheckoutUrl(buildCheckoutUrlWithUtms());
+  }, []);
 
   // Inicializa o motor de proteção Shield no modo 100% silencioso (stealth)
   useEffect(() => {
@@ -85,7 +106,7 @@ export default function App() {
 
           <div className="hero-cta">
             <a 
-              href={CHECKOUT_URL} 
+              href={checkoutUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"
@@ -280,7 +301,7 @@ export default function App() {
 
           <div style={{ textAlign: 'center' }}>
             <a 
-              href={CHECKOUT_URL} 
+              href={checkoutUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"
@@ -899,7 +920,7 @@ export default function App() {
 
           <div className="gallery-cta-block">
             <a 
-              href={CHECKOUT_URL} 
+              href={checkoutUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"
@@ -936,7 +957,7 @@ export default function App() {
 
             <div>
               <a 
-                href={CHECKOUT_URL} 
+                href={checkoutUrl} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-pink"
@@ -1010,7 +1031,7 @@ export default function App() {
 
           <div>
             <a 
-              href={CHECKOUT_URL} 
+              href={checkoutUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"

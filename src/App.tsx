@@ -12,6 +12,8 @@ interface LightboxState {
   caption: string;
 }
 
+const CHECKOUT_URL = "https://pay.hotmart.com/A108135883A?off=8xjy0ssa";
+
 export default function App() {
   const [shieldConfig] = useState<ShieldOptions>(DEFAULT_SHIELD_CONFIG);
   const [lightbox, setLightbox] = useState<LightboxState | null>(null);
@@ -83,7 +85,7 @@ export default function App() {
 
           <div className="hero-cta">
             <a 
-              href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" 
+              href={CHECKOUT_URL} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"
@@ -278,7 +280,7 @@ export default function App() {
 
           <div style={{ textAlign: 'center' }}>
             <a 
-              href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" 
+              href={CHECKOUT_URL} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"
@@ -897,7 +899,7 @@ export default function App() {
 
           <div className="gallery-cta-block">
             <a 
-              href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" 
+              href={CHECKOUT_URL} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"
@@ -934,7 +936,7 @@ export default function App() {
 
             <div>
               <a 
-                href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" 
+                href={CHECKOUT_URL} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-pink"
@@ -1008,7 +1010,7 @@ export default function App() {
 
           <div>
             <a 
-              href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" 
+              href={CHECKOUT_URL} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-pink"
@@ -1024,25 +1026,7 @@ export default function App() {
       </section>
 
       {/* ============================================================== */}
-      {/* 8. STICKY BOTTOM BAR                                           */}
-      {/* ============================================================== */}
-      <aside className="sticky-bar" aria-label="Quick checkout action">
-        <div className="sticky-bar-info">
-          <span className="sticky-bar-title">Six PDF kits</span>
-          <span className="sticky-bar-price">$9.90 USD · One-time</span>
-        </div>
-        <a 
-          href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="btn-pink"
-        >
-          DOWNLOAD NOW
-        </a>
-      </aside>
-
-      {/* ============================================================== */}
-      {/* 9. FOOTER                                                      */}
+      {/* 8. FOOTER                                                      */}
       {/* ============================================================== */}
       <footer className="landing-footer">
         <div className="section-wrap">

@@ -28,7 +28,7 @@ export const RAW_PROTECTED_HTML = `<!-- APP SHIELD PROTECTED ENGINE -->
       </div>
 
       <div class="hero-cta">
-        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+        <a href="https://pay.hotmart.com/A108135883A?off=8xjy0ssa" target="_blank" rel="noopener noreferrer" class="btn-pink">
           DOWNLOAD ALL 6 KITS — $9.90
         </a>
       </div>
@@ -177,7 +177,7 @@ export const RAW_PROTECTED_HTML = `<!-- APP SHIELD PROTECTED ENGINE -->
       </div>
 
       <div style="text-align: center;">
-        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+        <a href="https://pay.hotmart.com/A108135883A?off=8xjy0ssa" target="_blank" rel="noopener noreferrer" class="btn-pink">
           GET THE COMPLETE TOOLKIT — $9.90
         </a>
       </div>
@@ -629,7 +629,7 @@ export const RAW_PROTECTED_HTML = `<!-- APP SHIELD PROTECTED ENGINE -->
       </p>
 
       <div class="gallery-cta-block">
-        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+        <a href="https://pay.hotmart.com/A108135883A?off=8xjy0ssa" target="_blank" rel="noopener noreferrer" class="btn-pink">
           GET ALL 6 KITS — ONLY $9.90
         </a>
         <div class="gallery-guarantee-line">
@@ -659,7 +659,7 @@ export const RAW_PROTECTED_HTML = `<!-- APP SHIELD PROTECTED ENGINE -->
         </ul>
 
         <div>
-          <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+          <a href="https://pay.hotmart.com/A108135883A?off=8xjy0ssa" target="_blank" rel="noopener noreferrer" class="btn-pink">
             YES — GET ALL 6 KITS FOR $9.90
           </a>
         </div>
@@ -724,7 +724,7 @@ export const RAW_PROTECTED_HTML = `<!-- APP SHIELD PROTECTED ENGINE -->
       </div>
 
       <div>
-        <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
+        <a href="https://pay.hotmart.com/A108135883A?off=8xjy0ssa" target="_blank" rel="noopener noreferrer" class="btn-pink">
           GET INSTANT PDF ACCESS — $9.90
         </a>
       </div>
@@ -735,18 +735,7 @@ export const RAW_PROTECTED_HTML = `<!-- APP SHIELD PROTECTED ENGINE -->
     </div>
   </section>
 
-  <!-- 8. STICKY BOTTOM BAR -->
-  <aside class="sticky-bar" aria-label="Quick checkout action">
-    <div class="sticky-bar-info">
-      <span class="sticky-bar-title">Six PDF kits</span>
-      <span class="sticky-bar-price">$9.90 USD · One-time</span>
-    </div>
-    <a href="https://pay.hotmart.com/M106630378O?checkoutMode=10&utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=" target="_blank" rel="noopener noreferrer" class="btn-pink">
-      DOWNLOAD NOW
-    </a>
-  </aside>
-
-  <!-- 9. FOOTER -->
+  <!-- 8. FOOTER -->
   <footer class="landing-footer">
     <div class="section-wrap">
       <p>© 2026 Complete Preschool Teacher Toolkit. Digital PDF product. No physical items shipped.</p>

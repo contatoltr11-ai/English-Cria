@@ -6,17 +6,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './pageStyles.css';
 import { ShieldEngine, DEFAULT_SHIELD_CONFIG, ShieldOptions } from './utils/shieldEngine';
-import { 
-  ShieldCheck, 
-  Lock, 
-  EyeOff, 
-  Sliders, 
-  X, 
-  ExternalLink, 
-  CopyCheck, 
-  AlertTriangle,
-  Code
-} from 'lucide-react';
 
 interface LightboxState {
   src: string;
@@ -24,28 +13,13 @@ interface LightboxState {
 }
 
 export default function App() {
-  const [shieldConfig, setShieldConfig] = useState<ShieldOptions>(DEFAULT_SHIELD_CONFIG);
-  const [shieldNotice, setShieldNotice] = useState<string | null>(null);
-  const [showShieldPanel, setShowShieldPanel] = useState<boolean>(false);
-  const [isShieldMinimized, setIsShieldMinimized] = useState<boolean>(false);
+  const [shieldConfig] = useState<ShieldOptions>(DEFAULT_SHIELD_CONFIG);
   const [lightbox, setLightbox] = useState<LightboxState | null>(null);
   const shieldEngineRef = useRef<ShieldEngine | null>(null);
-  const noticeTimerRef = useRef<number | null>(null);
 
-  // Exibe notificação temporária quando uma tentativa de clonagem/inspeção for bloqueada
-  const handleViolation = (_type: string, detail: string) => {
-    setShieldNotice(detail);
-    if (noticeTimerRef.current) {
-      clearTimeout(noticeTimerRef.current);
-    }
-    noticeTimerRef.current = window.setTimeout(() => {
-      setShieldNotice(null);
-    }, 3800);
-  };
-
-  // Inicializa o motor de proteção Shield
+  // Inicializa o motor de proteção Shield no modo 100% silencioso (stealth)
   useEffect(() => {
-    const engine = new ShieldEngine(shieldConfig, handleViolation);
+    const engine = new ShieldEngine(shieldConfig);
     engine.init();
     shieldEngineRef.current = engine;
 
@@ -53,13 +27,6 @@ export default function App() {
       engine.destroy();
     };
   }, []);
-
-  // Atualiza regras se o usuário alterar no painel de controle
-  useEffect(() => {
-    if (shieldEngineRef.current) {
-      shieldEngineRef.current.updateConfig(shieldConfig);
-    }
-  }, [shieldConfig]);
 
   // Tecla Escape fecha o Lightbox
   useEffect(() => {
@@ -87,13 +54,6 @@ export default function App() {
 
   const closeLightbox = () => {
     setLightbox(null);
-  };
-
-  const toggleConfig = (key: keyof ShieldOptions) => {
-    setShieldConfig((prev) => ({
-      ...prev,
-      [key]: !prev[key],
-    }));
   };
 
   return (
@@ -1119,176 +1079,6 @@ export default function App() {
             <div className="lightbox-caption">{lightbox.caption}</div>
           </div>
         </div>
-      )}
-
-      {/* ============================================================== */}
-      {/* VIOLATION TOAST (Alerta quando tentam inspecionar/copiar)      */}
-      {/* ============================================================== */}
-      {shieldNotice && (
-        <div className="fixed top-5 right-5 z-[99999] max-w-sm bg-slate-900/95 text-white p-4 rounded-xl shadow-2xl border border-pink-500/40 backdrop-blur-md animate-fade-in flex items-start gap-3">
-          <div className="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center shrink-0 mt-0.5">
-            <Lock className="w-4 h-4" />
-          </div>
-          <div className="flex-1">
-            <div className="text-xs font-bold uppercase tracking-wider text-pink-400 mb-0.5">
-              Shield Ativo: Ação Bloqueada
-            </div>
-            <div className="text-xs text-slate-300 leading-relaxed">
-              {shieldNotice}
-            </div>
-          </div>
-          <button 
-            type="button" 
-            onClick={() => setShieldNotice(null)}
-            className="text-slate-400 hover:text-white"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
-      )}
-
-      {/* ============================================================== */}
-      {/* SHIELD CONTROL BADGE (Discreto / Flutuante no canto inferior)   */}
-      {/* ============================================================== */}
-      {!isShieldMinimized ? (
-        <div className="fixed bottom-24 left-4 z-[9000] hidden sm:block">
-          <div className="relative">
-            <button
-              type="button"
-              onClick={() => setShowShieldPanel(!showShieldPanel)}
-              className="bg-slate-900/90 hover:bg-slate-900 text-white px-3.5 py-2 rounded-full shadow-lg border border-slate-700/60 backdrop-blur-md flex items-center gap-2 text-xs font-semibold tracking-wide transition-all duration-200 hover:scale-105"
-              title="Gerenciador do Shield Anti-Clonagem"
-            >
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>AppShield Ativo</span>
-            </button>
-
-            {/* Shield Config Flyout Panel */}
-            {showShieldPanel && (
-              <div className="absolute bottom-11 left-0 w-80 bg-slate-900/95 text-white p-4 rounded-2xl shadow-2xl border border-slate-700/80 backdrop-blur-xl animate-fade-in text-xs z-[9001]">
-                <div className="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                    <span className="font-bold text-sm">Status de Proteção</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <button
-                      type="button"
-                      onClick={() => setIsShieldMinimized(true)}
-                      className="text-slate-400 hover:text-slate-200 px-1.5 py-0.5 rounded text-[10px] bg-slate-800"
-                      title="Ocultar para visitantes normais"
-                    >
-                      Ocultar
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowShieldPanel(false)}
-                      className="text-slate-400 hover:text-white p-1"
-                    >
-                      <X className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                </div>
-
-                <div className="space-y-2 mb-3.5">
-                  <div className="flex items-center justify-between p-2 rounded-lg bg-slate-800/60">
-                    <div className="flex items-center gap-2">
-                      <Code className="w-3.5 h-3.5 text-pink-400" />
-                      <div>
-                        <div className="font-medium text-slate-200">View Source (Ctrl+U)</div>
-                        <div className="text-[10px] text-slate-400">Código original 100% invisível</div>
-                      </div>
-                    </div>
-                    <span className="text-[10px] font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded">
-                      IMUNIZADO
-                    </span>
-                  </div>
-
-                  <div className="flex items-center justify-between p-2 rounded-lg bg-slate-800/60">
-                    <div className="flex items-center gap-2">
-                      <Lock className="w-3.5 h-3.5 text-pink-400" />
-                      <div>
-                        <div className="font-medium text-slate-200">Botão Direito</div>
-                        <div className="text-[10px] text-slate-400">Menu de contexto bloqueado</div>
-                      </div>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => toggleConfig('blockRightClick')}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold transition-colors ${
-                        shieldConfig.blockRightClick
-                          ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                          : 'bg-slate-700 text-slate-400'
-                      }`}
-                    >
-                      {shieldConfig.blockRightClick ? 'LIGADO' : 'DESLIGADO'}
-                    </button>
-                  </div>
-
-                  <div className="flex items-center justify-between p-2 rounded-lg bg-slate-800/60">
-                    <div className="flex items-center gap-2">
-                      <EyeOff className="w-3.5 h-3.5 text-pink-400" />
-                      <div>
-                        <div className="font-medium text-slate-200">F12 & Inspecionar</div>
-                        <div className="text-[10px] text-slate-400">Atalhos dev desativados</div>
-                      </div>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => toggleConfig('blockShortcuts')}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold transition-colors ${
-                        shieldConfig.blockShortcuts
-                          ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                          : 'bg-slate-700 text-slate-400'
-                      }`}
-                    >
-                      {shieldConfig.blockShortcuts ? 'LIGADO' : 'DESLIGADO'}
-                    </button>
-                  </div>
-
-                  <div className="flex items-center justify-between p-2 rounded-lg bg-slate-800/60">
-                    <div className="flex items-center gap-2">
-                      <CopyCheck className="w-3.5 h-3.5 text-pink-400" />
-                      <div>
-                        <div className="font-medium text-slate-200">Anti-Seleção / Cópia</div>
-                        <div className="text-[10px] text-slate-400">Impede cópia de texto e fotos</div>
-                      </div>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => toggleConfig('blockSelection')}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold transition-colors ${
-                        shieldConfig.blockSelection
-                          ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                          : 'bg-slate-700 text-slate-400'
-                      }`}
-                    >
-                      {shieldConfig.blockSelection ? 'LIGADO' : 'DESLIGADO'}
-                    </button>
-                  </div>
-                </div>
-
-                <div className="p-2.5 rounded-lg bg-pink-950/40 border border-pink-500/30 text-[10px] text-pink-200 leading-normal">
-                  💡 <strong>Como testar:</strong> Tente clicar com botão direito ou pressionar F12/Ctrl+U nesta tela. Você verá o bloqueio em ação!
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      ) : (
-        /* Botão mini para reabrir o controle se o dono quiser */
-        <button
-          type="button"
-          onClick={() => {
-            setIsShieldMinimized(false);
-            setShowShieldPanel(true);
-          }}
-          className="fixed bottom-24 left-2 z-[9000] opacity-40 hover:opacity-100 transition-opacity bg-slate-900/80 text-white p-2 rounded-full border border-slate-700 shadow"
-          title="Reabrir Painel Shield"
-        >
-          <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-        </button>
       )}
 
     </div>

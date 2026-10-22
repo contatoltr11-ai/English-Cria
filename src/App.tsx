@@ -6,6 +6,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './pageStyles.css';
 import { ShieldEngine, DEFAULT_SHIELD_CONFIG, ShieldOptions } from './utils/shieldEngine';
+import { ShoppingCart, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 interface LightboxState {
   src: string;
@@ -34,10 +35,20 @@ export default function App() {
   const [shieldConfig] = useState<ShieldOptions>(DEFAULT_SHIELD_CONFIG);
   const [lightbox, setLightbox] = useState<LightboxState | null>(null);
   const [checkoutUrl, setCheckoutUrl] = useState<string>(BASE_CHECKOUT_URL);
+  const [showStickyBar, setShowStickyBar] = useState<boolean>(false);
   const shieldEngineRef = useRef<ShieldEngine | null>(null);
 
   useEffect(() => {
     setCheckoutUrl(buildCheckoutUrlWithUtms());
+  }, []);
+
+  // Monitora scroll para exibir o CTA fixo apenas a partir da 2ª seção (após a 1ª dobra)
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowStickyBar(window.scrollY > 520);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Inicializa o motor de proteção Shield no modo 100% silencioso (stealth)
@@ -79,39 +90,103 @@ export default function App() {
     setLightbox(null);
   };
 
+  // Leva suavemente até a seção da oferta
+  const scrollToOffer = () => {
+    const target = document.getElementById('pricing');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className={`min-h-screen ${shieldConfig.blockSelection ? 'app-shield-protected' : ''}`}>
       
       {/* ============================================================== */}
-      {/* 1. HERO SECTION                                                */}
+      {/* 0. TOP NAVBAR (Matching Image 1)                               */}
       {/* ============================================================== */}
-      <header className="hero-section">
-        <div className="hero-wrap">
-          <div className="hero-badges">
-            <span className="badge-pill">★ 560+ printable pages</span>
-            <span className="badge-pill">✓ 6 complete PDF kits</span>
-            <span className="badge-pill">⚡ Instant digital access</span>
+      <header className="top-navbar">
+        <div className="nav-wrap">
+          <div className="nav-brand">
+            {/* Rainbow Icon */}
+            <svg className="w-8 h-8 shrink-0" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 22C4 13.1634 11.1634 6 20 6C28.8366 6 36 13.1634 36 22" stroke="#ff2d6c" strokeWidth="4.5" strokeLinecap="round" />
+              <path d="M9 22C9 15.9249 13.9249 11 20 11C26.0751 11 31 15.9249 31 22" stroke="#fbbf24" strokeWidth="4" strokeLinecap="round" />
+              <path d="M14 22C14 18.6863 16.6863 16 20 16C23.3137 16 26 18.6863 26 22" stroke="#2dd4bf" strokeWidth="3.5" strokeLinecap="round" />
+            </svg>
+            <span>Teacher Toolkit<span className="nav-brand-dot">.</span></span>
           </div>
 
-          <h1 className="hero-h1">Stop Planning Preschool Activities From Scratch!</h1>
+          <button 
+            type="button" 
+            onClick={scrollToOffer}
+            className="nav-cta-btn"
+          >
+            <span>Get all 6 kits</span>
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+      </header>
 
+      {/* ============================================================== */}
+      {/* 1. HERO SECTION (Revamped for Mobile & Desktop - Image 1)      */}
+      {/* ============================================================== */}
+      <section className="hero-section">
+        <div className="hero-wrap">
+          
+          {/* Badge */}
+          <div className="flex justify-center mb-2">
+            <span className="badge-pill">
+              <span className="text-amber-500">⭐</span> FOR PRESCHOOL TEACHERS · AGES 2–7
+            </span>
+          </div>
+
+          {/* Heading */}
+          <h1 className="hero-h1">
+            Stop Planning<br />
+            Preschool Activities<br />
+            <span className="from-scratch-text">From Scratch!</span>
+          </h1>
+
+          {/* Subtitle */}
           <p className="hero-sub">
             Six ready-to-print activity kits to help you manage classroom transitions, keep little hands busy and make learning easier — without hours of preparation.
           </p>
 
-          <div className="hero-price-tag">
-            <span className="hero-price-amount">$9.90 USD</span>
-            <span className="hero-price-sub">· ONE-TIME · No subscription</span>
+          {/* Checklist with circular green checkmarks */}
+          <div className="hero-checklist">
+            <div className="hero-check-item">
+              <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+              <span>560+ printable pages</span>
+            </div>
+            <div className="hero-check-item">
+              <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+              <span>6 complete PDF kits</span>
+            </div>
+            <div className="hero-check-item">
+              <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+              <span>Instant digital access</span>
+            </div>
           </div>
 
-          <div className="hero-cta">
+          {/* FIRST FOLD OFFER CARD (Matching Image 1) */}
+          <div className="hero-offer-card">
+            <div className="hero-card-price-row">
+              <div className="hero-card-amount">$9.90</div>
+              <div className="hero-card-price-meta">
+                <span className="hero-card-currency">USD · ONE-TIME</span>
+                <span className="hero-card-sub">No subscription</span>
+              </div>
+            </div>
+
             <a 
               href={checkoutUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn-pink"
+              className="btn-pink-cart"
             >
-              DOWNLOAD ALL 6 KITS — $9.90
+              <ShoppingCart className="w-5 h-5 shrink-0" />
+              <span>DOWNLOAD ALL 6 KITS — $9.90</span>
+              <ArrowRight className="w-5 h-5 shrink-0" />
             </a>
           </div>
 
@@ -133,7 +208,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
       {/* ============================================================== */}
       {/* 2. BENEFITS SECTION                                            */}
@@ -937,7 +1012,7 @@ export default function App() {
       {/* ============================================================== */}
       {/* 5. PRICE BLOCK                                                 */}
       {/* ============================================================== */}
-      <section className="landing-section">
+      <section className="landing-section" id="pricing">
         <div className="section-wrap">
           <div className="price-box">
             <div className="section-eyebrow">Complete Teacher Bundle</div>
@@ -960,9 +1035,11 @@ export default function App() {
                 href={checkoutUrl} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn-pink"
+                className="btn-pink-cart"
               >
-                YES — GET ALL 6 KITS FOR $9.90
+                <ShoppingCart className="w-5 h-5 shrink-0" />
+                <span>YES — GET ALL 6 KITS FOR $9.90</span>
+                <ArrowRight className="w-5 h-5 shrink-0" />
               </a>
             </div>
 
@@ -1020,23 +1097,28 @@ export default function App() {
       </section>
 
       {/* ============================================================== */}
-      {/* 7. FINAL CTA                                                   */}
+      {/* 7. FINAL CTA (Matching Image 2)                                */}
       {/* ============================================================== */}
       <section className="final-cta-section">
         <div className="section-wrap">
-          <div className="section-header" style={{ marginBottom: '1.5rem' }}>
-            <h2 className="section-title">Make tomorrow's classroom a little easier.</h2>
-            <p className="final-cta-sub">Download the six-kit printable collection for US$9.90.</p>
-          </div>
+          <h2 className="final-cta-title">
+            Make tomorrow's<br />
+            classroom <span className="pink-highlight">a little easier.</span>
+          </h2>
+          <p className="final-cta-sub">
+            Download the six-kit printable collection for US$9.90.
+          </p>
 
-          <div>
+          <div className="max-w-md mx-auto">
             <a 
               href={checkoutUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn-pink"
+              className="btn-pink-cart"
             >
-              GET INSTANT PDF ACCESS — $9.90
+              <ShoppingCart className="w-5 h-5 shrink-0" />
+              <span>GET INSTANT PDF ACCESS — $9.90</span>
+              <ArrowRight className="w-5 h-5 shrink-0" />
             </a>
           </div>
 
@@ -1047,14 +1129,35 @@ export default function App() {
       </section>
 
       {/* ============================================================== */}
-      {/* 8. FOOTER                                                      */}
+      {/* 8. FOOTER (Matching Image 2)                                   */}
       {/* ============================================================== */}
       <footer className="landing-footer">
         <div className="section-wrap">
-          <p>© 2026 Complete Preschool Teacher Toolkit. Digital PDF product. No physical items shipped.</p>
+          <p>© 2026 · Complete Preschool Teacher Toolkit · Digital PDF product. No physical items shipped.</p>
           <p className="landing-footer-policy">If the toolkit is not right for you, request a refund within 7 days according to Hotmart's policy.</p>
         </div>
       </footer>
+
+      {/* ============================================================== */}
+      {/* CONDITIONAL STICKY BOTTOM BAR (Visible only from 2nd section)   */}
+      {/* ============================================================== */}
+      <aside 
+        className={`sticky-bottom-bar ${showStickyBar ? 'visible-bar' : 'hidden-bar'}`} 
+        aria-label="Quick checkout action"
+      >
+        <div className="sticky-bar-info">
+          <span className="sticky-bar-title">Six PDF kits</span>
+          <span className="sticky-bar-price">$9.90 USD · One-time</span>
+        </div>
+        <a 
+          href={checkoutUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn-pink"
+        >
+          DOWNLOAD NOW
+        </a>
+      </aside>
 
       {/* ============================================================== */}
       {/* LIGHTBOX MODAL                                                 */}

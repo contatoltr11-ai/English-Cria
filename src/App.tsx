@@ -249,123 +249,127 @@ export default function App() {
       <section className="landing-section">
         <div className="section-wrap">
           <div className="section-header">
-            <div className="section-eyebrow">Everything inside the bundle</div>
-            <h2 className="section-title">Everything you get for $9.90</h2>
-            <p className="section-desc">All six kits are included in one purchase. Choose the pages you need, download and print.</p>
+            <h2 className="kits-header-title">
+              Everything you get for<br />
+              <span className="kits-header-price">$9.90</span>
+            </h2>
+            <p className="section-desc">
+              All six kits are included in one purchase. Choose the pages you need, download and print.
+            </p>
           </div>
 
           <div className="kits-grid">
             {/* Kit 1 */}
             <div className="kit-card">
-              <div className="kit-img-box">
+              <div className="kit-img-box kit-bg-1">
                 <img 
                   src="https://preschool-playprint-bundle.lovable.app/images/mockups/01_attention_rescue.svg" 
-                  alt="Classroom Attention Rescue Kit cover mockup" 
+                  alt="Classroom Attention Rescue Kit" 
                   loading="lazy" 
                   draggable={false}
                 />
               </div>
               <div className="kit-body">
-                <div className="kit-tag-row">
-                  <span className="kit-pages-badge">50 Pages</span>
-                </div>
                 <h3 className="kit-title">Classroom Attention Rescue Kit</h3>
-                <p className="kit-desc">Attention-getters, listening games, call-and-response and playful prompts for clean-up, line-up and transitions.</p>
+                <span className="kit-pages-text kit-pages-1">50 pages</span>
+                <p className="kit-desc">
+                  Attention-getters, listening games, call-and-response and playful prompts for clean-up, line-up and transitions.
+                </p>
               </div>
             </div>
 
             {/* Kit 2 */}
             <div className="kit-card">
-              <div className="kit-img-box">
+              <div className="kit-img-box kit-bg-2">
                 <img 
                   src="https://preschool-playprint-bundle.lovable.app/images/kits/classroom-rescue/00-capa-classroom-rescue-kit-full.webp" 
-                  alt="Classroom Rescue Kit cover" 
+                  alt="Classroom Rescue Kit" 
                   loading="lazy" 
                   draggable={false}
                 />
               </div>
               <div className="kit-body">
-                <div className="kit-tag-row">
-                  <span className="kit-pages-badge">72 Pages</span>
-                </div>
                 <h3 className="kit-title">Classroom Rescue Kit</h3>
-                <p className="kit-desc">Purposeful, low-prep activities for movement, group time, coordination and those unexpected gaps in the school day.</p>
+                <span className="kit-pages-text kit-pages-2">72 pages</span>
+                <p className="kit-desc">
+                  Purposeful, low-prep activities for movement, group time, coordination and those unexpected gaps in the school day.
+                </p>
               </div>
             </div>
 
             {/* Kit 3 */}
             <div className="kit-card">
-              <div className="kit-img-box">
+              <div className="kit-img-box kit-bg-3">
                 <img 
                   src="https://preschool-playprint-bundle.lovable.app/images/playprint/behavior-cover-full.webp" 
-                  alt="Preschool Routine and Behavior Pack cover" 
+                  alt="Preschool Routine and Behavior Pack" 
                   loading="lazy" 
                   draggable={false}
                 />
               </div>
               <div className="kit-body">
-                <div className="kit-tag-row">
-                  <span className="kit-pages-badge">50 Pages</span>
-                </div>
                 <h3 className="kit-title">Preschool Routine & Behavior Pack</h3>
-                <p className="kit-desc">Visual schedules, simple classroom expectations and routine supports to help children anticipate what comes next.</p>
+                <span className="kit-pages-text kit-pages-3">50 pages</span>
+                <p className="kit-desc">
+                  Visual schedules, simple classroom expectations and routine supports to help children anticipate what comes next.
+                </p>
               </div>
             </div>
 
             {/* Kit 4 */}
             <div className="kit-card">
-              <div className="kit-img-box">
+              <div className="kit-img-box kit-bg-4">
                 <img 
                   src="https://preschool-playprint-bundle.lovable.app/images/kits/mega-activities/00-capa-preschool-mega-activity-bundle-full.webp" 
-                  alt="Preschool Mega Activity Bundle cover" 
+                  alt="Preschool Mega Activity Bundle" 
                   loading="lazy" 
                   draggable={false}
                 />
               </div>
               <div className="kit-body">
-                <div className="kit-tag-row">
-                  <span className="kit-pages-badge">170+ Pages</span>
-                </div>
                 <h3 className="kit-title">Preschool Mega Activity Bundle</h3>
-                <p className="kit-desc">Printable learning for letters, early sounds, numbers, shapes, matching, tracing and fine motor development.</p>
+                <span className="kit-pages-text kit-pages-4">170+ pages</span>
+                <p className="kit-desc">
+                  Printable learning for letters, early sounds, numbers, shapes, matching, tracing and fine motor development.
+                </p>
               </div>
             </div>
 
             {/* Kit 5 */}
             <div className="kit-card">
-              <div className="kit-img-box">
+              <div className="kit-img-box kit-bg-5">
                 <img 
                   src="https://preschool-playprint-bundle.lovable.app/images/kits/screen-free/00-capa-screen-free-back-to-school-full.webp" 
-                  alt="Screen-Free Back-to-School Mega Kit cover" 
+                  alt="Screen-Free Back-to-School Mega Kit" 
                   loading="lazy" 
                   draggable={false}
                 />
               </div>
               <div className="kit-body">
-                <div className="kit-tag-row">
-                  <span className="kit-pages-badge">100 Pages</span>
-                </div>
                 <h3 className="kit-title">Screen-Free Back-to-School Mega Kit</h3>
-                <p className="kit-desc">Hands-on printables for tracing, matching, early literacy, school themes and everyday learning through play.</p>
+                <span className="kit-pages-text kit-pages-5">100 pages</span>
+                <p className="kit-desc">
+                  Hands-on printables for tracing, matching, early literacy, school themes and everyday learning through play.
+                </p>
               </div>
             </div>
 
             {/* Kit 6 */}
             <div className="kit-card">
-              <div className="kit-img-box">
+              <div className="kit-img-box kit-bg-6">
                 <img 
                   src="https://preschool-playprint-bundle.lovable.app/images/mockups/02_independence_kit.svg" 
-                  alt="My Everyday Independence Kit cover mockup" 
+                  alt="My Everyday Independence Kit" 
                   loading="lazy" 
                   draggable={false}
                 />
               </div>
               <div className="kit-body">
-                <div className="kit-tag-row">
-                  <span className="kit-pages-badge">120 Pages</span>
-                </div>
                 <h3 className="kit-title">My Everyday Independence Kit</h3>
-                <p className="kit-desc">Adaptable visual choices and supports for needs, feelings, self-care and everyday independence, including children who benefit from extra communication support.</p>
+                <span className="kit-pages-text kit-pages-6">120 pages</span>
+                <p className="kit-desc">
+                  Adaptable visual choices and supports for needs, feelings, self-care and everyday independence, including children who benefit from extra communication support.
+                </p>
               </div>
             </div>
           </div>
@@ -374,14 +378,16 @@ export default function App() {
             <strong>PDF downloads only.</strong> The hero photo features five kits; the Routine & Behavior Pack is included as the sixth.
           </div>
 
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: 'center', maxWidth: '440px', margin: '0 auto' }}>
             <a 
               href={checkoutUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn-pink"
+              className="btn-pink-cart"
             >
-              GET THE COMPLETE TOOLKIT — $9.90
+              <ShoppingCart className="w-5 h-5 shrink-0" />
+              <span>GET THE COMPLETE TOOLKIT — $9.90</span>
+              <ArrowRight className="w-5 h-5 shrink-0" />
             </a>
           </div>
         </div>

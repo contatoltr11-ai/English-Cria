@@ -13,7 +13,7 @@ interface LightboxState {
   caption: string;
 }
 
-const BASE_CHECKOUT_URL = "https://pay.hotmart.com/A108135883A?off=8xjy0ssa";
+const BASE_CHECKOUT_URL = "https://pay.hotmart.com/A108135883A?checkoutMode=10";
 
 function buildCheckoutUrlWithUtms(): string {
   if (typeof window === 'undefined') return BASE_CHECKOUT_URL;
